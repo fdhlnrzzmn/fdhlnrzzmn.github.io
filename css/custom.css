@@ -1,0 +1,106 @@
+body {
+  color: white;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-dark {
+  background: linear-gradient(rgb(68, 68, 68), rgb(41, 41, 41));
+  border-radius: 0 0 25px 25px;
+  width: 7%;
+  margin: auto;
+  position: sticky;
+  text-align: center;
+}
+
+.hero-image {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.hero-image h1 {
+  font-family: "Bebas Neue", cursive;
+  margin-top: -50px;
+}
+
+.hero-image p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.btn-dark {
+  transition: 0.6s all;
+  border-radius: 14px;
+  padding: 4px 4px 4px 4px;
+  background-color: white;
+  color: black;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 7px;
+}
+
+.btn-dark:hover {
+  transition: 0.6s all;
+  border-radius: 18px;
+  background-color: rgb(173, 173, 173);
+  border: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
+  -moz-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
+  box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
+}
+
+.footerku {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    color: white;
+    background-image: url(../images/mobile-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar-dark {
+    background: linear-gradient(rgb(68, 68, 68), rgb(41, 41, 41));
+    border-radius: 0 0 25px 25px;
+    width: 23%;
+    margin: auto;
+    position: sticky;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hero-image h1 {
+    text-align: center;
+    margin-top: 50%;
+  }
+
+  .hero-image p {
+    margin-top: 40px;
+    padding: 0 20px 0 20px;
+  }
+
+  .btn-dark {
+    margin-top: 25px;
+  }
+
+  .footerku {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-top: 200px;
+  }
+}
