@@ -17,16 +17,20 @@ body {
 .hero-image {
   margin-top: 100px;
   margin-bottom: 10px;
+  animation: anim 1s forwards;
 }
 
 .hero-image h1 {
   font-family: "Bebas Neue", cursive;
   margin-top: -50px;
+  animation: anim 1s forwards;
 }
 
 .hero-image p {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
+  animation: anim1 1s backwards;
+  animation-delay: 1s;
 }
 
 .btn-dark {
@@ -40,6 +44,8 @@ body {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   margin-right: 7px;
+  animation: icon 1s backwards;
+  animation-delay: 2s;
 }
 
 .btn-dark:hover {
@@ -59,6 +65,43 @@ body {
   font-size: 12px;
   color: white;
   margin-top: 40px;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0%;
+    transform: translatex(-100px);
+  }
+  to {
+    opacity: 100;
+    transform: translatex(10);
+  }
+}
+
+@keyframes anim1 {
+  from {
+    opacity: 0%;
+    transform: translatex(-90px);
+  }
+  to {
+    opacity: 100;
+    transform: translatex(10);
+  }
+}
+
+@keyframes icon {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 500;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
 }
 
 @media only screen and (max-width: 768px) {
