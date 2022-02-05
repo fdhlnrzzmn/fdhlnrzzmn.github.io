@@ -1,8 +1,5 @@
 body {
   color: white;
-  background-image: url(../images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .navbar-dark {
@@ -13,15 +10,19 @@ body {
   position: -webkit-sticky;
   position: sticky;
   text-align: center;
+  z-index: 9;
 }
 
 .hero-image {
-  margin-top: 100px;
+  margin-top: -100px;
   margin-bottom: 10px;
-  -webkit-animation: anim 1s forwards;
-  animation: anim 1s forwards;
+  padding: 15% 0 12% 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   h1 {
+    margin-left: -100px;
     font-family: "Bebas Neue", cursive;
     font-size: 100px;
     line-height: 0.9;
@@ -31,54 +32,54 @@ body {
   }
 
   p {
+    margin-left: -100px;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     -webkit-animation: anim1 1s backwards;
     animation: anim1 1s backwards;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+    padding-right: 10px;
   }
 
   .image {
-    margin-right: -150px !important;
+    margin-left: 240px !important;
+    margin-right: -120px;
+    -webkit-animation: anim 1s forwards;
+    animation: anim 1s forwards;
   }
 
-  .btn-dark {
+  .btn {
     -webkit-transition: 0.6s all;
     transition: 0.6s all;
     border-radius: 14px;
     padding: 4px 4px 4px 4px;
-    background-color: white;
-    color: black;
-    border: 0;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    margin-right: 7px;
     -webkit-animation: icon 1s backwards;
     animation: icon 1s backwards;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
+    margin-right: -7px;
+    img {
+      width: 37px;
+      height: 37px;
+    }
   }
 
-  .btn-dark:hover {
+  .btn:hover {
     -webkit-transition: 0.6s all;
     transition: 0.6s all;
     border-radius: 18px;
-    background-color: #adadad;
-    border: 0;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     -webkit-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
     box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
   }
 }
 
-.footerku {
+.footer {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
+  background-color: black;
   color: white;
-  margin-top: 40px;
+  margin-top: -10px;
 }
 
 @-webkit-keyframes anim {
@@ -172,9 +173,6 @@ body {
 @media only screen and (max-width: 768px) {
   body {
     color: white;
-    background-image: url(../images/mobile-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .navbar-dark {
     background: -webkit-gradient(
@@ -193,36 +191,45 @@ body {
     text-align: center;
   }
   .hero-image {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: -100px;
+    padding-bottom: 230px;
+    background-image: url(../images/mobile-background.jpg);
+
+    h1 {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 70%;
+      font-size: 70px;
+      -webkit-animation: anim 1s forwards;
+      animation: anim 1s forwards;
+    }
+
+    p {
+      margin-left: 0;
+
+      margin-top: 40px;
+      padding: 0 20px 0 20px;
+      -webkit-animation: anim1 1s backwards;
+      animation: anim1 1s backwards;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+
+    .btn {
+      margin-left: 0;
+
+      margin-top: 25px;
+      -webkit-animation: icon 1s backwards;
+      animation: icon 1s backwards;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+    }
   }
-  .hero-image h1 {
-    text-align: center;
-    margin-top: 50%;
-    font-size: 70px;
-    -webkit-animation: anim 1s forwards;
-    animation: anim 1s forwards;
-  }
-  .hero-image p {
-    margin-top: 40px;
-    padding: 0 20px 0 20px;
-    -webkit-animation: anim1 1s backwards;
-    animation: anim1 1s backwards;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-  .btn-dark {
-    margin-top: 25px;
-    -webkit-animation: icon 1s backwards;
-    animation: icon 1s backwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-  }
-  .footerku {
+
+  .footer {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     color: white;
-    margin-top: 200px;
   }
 }
 
