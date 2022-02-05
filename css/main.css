@@ -6,10 +6,12 @@ body {
 }
 
 .navbar-dark {
-  background: linear-gradient(rgb(68, 68, 68), rgb(41, 41, 41));
+  background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#292929));
+  background: linear-gradient(#444444, #292929);
   border-radius: 0 0 25px 25px;
   width: 7%;
   margin: auto;
+  position: -webkit-sticky;
   position: sticky;
   text-align: center;
 }
@@ -17,23 +19,34 @@ body {
 .hero-image {
   margin-top: 100px;
   margin-bottom: 10px;
+  -webkit-animation: anim 1s forwards;
   animation: anim 1s forwards;
 }
 
 .hero-image h1 {
   font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  line-height: 0.9;
   margin-top: -50px;
+  -webkit-animation: anim 1s forwards;
   animation: anim 1s forwards;
 }
 
 .hero-image p {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
+  -webkit-animation: anim1 1s backwards;
   animation: anim1 1s backwards;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-.btn-dark {
+.hero-image .image {
+  margin-right: -150px !important;
+}
+
+.hero-image .btn-dark {
+  -webkit-transition: 0.6s all;
   transition: 0.6s all;
   border-radius: 14px;
   padding: 4px 4px 4px 4px;
@@ -44,19 +57,21 @@ body {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   margin-right: 7px;
+  -webkit-animation: icon 1s backwards;
   animation: icon 1s backwards;
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
-.btn-dark:hover {
+.hero-image .btn-dark:hover {
+  -webkit-transition: 0.6s all;
   transition: 0.6s all;
   border-radius: 18px;
-  background-color: rgb(173, 173, 173);
+  background-color: #adadad;
   border: 0;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   -webkit-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
-  -moz-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
   box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
 }
 
@@ -67,13 +82,41 @@ body {
   margin-top: 40px;
 }
 
-@keyframes anim {
+@-webkit-keyframes anim {
   from {
     opacity: 0%;
+    -webkit-transform: translatex(-100px);
     transform: translatex(-100px);
   }
   to {
     opacity: 100;
+    -webkit-transform: translatex(10);
+    transform: translatex(10);
+  }
+}
+
+@keyframes anim {
+  from {
+    opacity: 0%;
+    -webkit-transform: translatex(-100px);
+    transform: translatex(-100px);
+  }
+  to {
+    opacity: 100;
+    -webkit-transform: translatex(10);
+    transform: translatex(10);
+  }
+}
+
+@-webkit-keyframes anim1 {
+  from {
+    opacity: 0%;
+    -webkit-transform: translatex(-90px);
+    transform: translatex(-90px);
+  }
+  to {
+    opacity: 100;
+    -webkit-transform: translatex(10);
     transform: translatex(10);
   }
 }
@@ -81,25 +124,48 @@ body {
 @keyframes anim1 {
   from {
     opacity: 0%;
+    -webkit-transform: translatex(-90px);
     transform: translatex(-90px);
   }
   to {
     opacity: 100;
+    -webkit-transform: translatex(10);
     transform: translatex(10);
+  }
+}
+
+@-webkit-keyframes icon {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    opacity: 500;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 100;
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes icon {
   0% {
     opacity: 0;
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
   50% {
     opacity: 500;
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
   100% {
     opacity: 100;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -111,40 +177,42 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .navbar-dark {
-    background: linear-gradient(rgb(68, 68, 68), rgb(41, 41, 41));
+    background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#292929));
+    background: linear-gradient(#444444, #292929);
     border-radius: 0 0 25px 25px;
     width: 23%;
     margin: auto;
+    position: -webkit-sticky;
     position: sticky;
     text-align: center;
   }
-
   .hero-image {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .hero-image h1 {
     text-align: center;
     margin-top: 50%;
+    font-size: 70px;
+    -webkit-animation: anim 1s forwards;
     animation: anim 1s forwards;
   }
-
   .hero-image p {
     margin-top: 40px;
     padding: 0 20px 0 20px;
+    -webkit-animation: anim1 1s backwards;
     animation: anim1 1s backwards;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
   }
-
   .btn-dark {
     margin-top: 25px;
+    -webkit-animation: icon 1s backwards;
     animation: icon 1s backwards;
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-
   .footerku {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -156,10 +224,12 @@ body {
 @keyframes anim {
   from {
     opacity: 0%;
+    -webkit-transform: translatey(-100px);
     transform: translatey(-100px);
   }
   to {
     opacity: 100;
+    -webkit-transform: translateY(10);
     transform: translateY(10);
   }
 }
@@ -167,10 +237,12 @@ body {
 @keyframes anim1 {
   from {
     opacity: 0%;
+    -webkit-transform: translatey(-90px);
     transform: translatey(-90px);
   }
   to {
     opacity: 100;
+    -webkit-transform: translateY(10);
     transform: translateY(10);
   }
 }
@@ -178,14 +250,18 @@ body {
 @keyframes icon {
   0% {
     opacity: 0;
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
   50% {
     opacity: 500;
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
   100% {
     opacity: 100;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
+/*# sourceMappingURL=main.css.map */
