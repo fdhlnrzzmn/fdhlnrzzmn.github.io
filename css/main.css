@@ -1,5 +1,6 @@
 body {
   color: white;
+  background-color: black;
 }
 
 .navbar-dark {
@@ -23,8 +24,11 @@ body {
   background-size: cover;
 }
 
-.hero-image h1 {
+.hero-image .desc {
   margin-left: -100px;
+}
+
+.hero-image .desc h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 100px;
   line-height: 0.9;
@@ -33,25 +37,17 @@ body {
   animation: anim 1s forwards;
 }
 
-.hero-image p {
-  margin-left: -100px;
+.hero-image .desc p {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   -webkit-animation: anim1 1s backwards;
   animation: anim1 1s backwards;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  padding-right: 190px;
+  padding-right: 170px;
 }
 
-.hero-image .image {
-  margin-left: 240px !important;
-  margin-right: -120px;
-  -webkit-animation: anim 1s forwards;
-  animation: anim 1s forwards;
-}
-
-.hero-image .btn {
+.hero-image .desc .btn {
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
   border-radius: 14px;
@@ -60,20 +56,28 @@ body {
   animation: icon 1s backwards;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
-  margin-right: -7px;
+  margin-right: 5px;
+  margin-left: -10px;
 }
 
-.hero-image .btn img {
+.hero-image .desc .btn img {
   width: 37px;
   height: 37px;
 }
 
-.hero-image .btn:hover {
+.hero-image .desc .btn:hover {
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
   border-radius: 18px;
   -webkit-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
   box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
+}
+
+.hero-image .image {
+  margin-left: 240px !important;
+  margin-right: -120px;
+  -webkit-animation: anim 1s forwards;
+  animation: anim 1s forwards;
 }
 
 .footer {
@@ -191,7 +195,10 @@ body {
     padding-bottom: 230px;
     background-image: url(../images/mobile-background.jpg);
   }
-  .hero-image h1 {
+  .hero-image .desc {
+    margin-left: 0;
+  }
+  .hero-image .desc h1 {
     margin-left: 0;
     text-align: center;
     margin-top: 50%;
@@ -199,7 +206,7 @@ body {
     -webkit-animation: anim 1s forwards;
     animation: anim 1s forwards;
   }
-  .hero-image p {
+  .hero-image .desc p {
     margin-left: 0;
     margin-top: 40px;
     padding: 0 20px 0 20px;
@@ -208,13 +215,14 @@ body {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
   }
-  .hero-image .btn {
+  .hero-image .desc .btn {
     margin-left: 0;
     margin-top: 25px;
     -webkit-animation: icon 1s backwards;
     animation: icon 1s backwards;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
+    margin-right: -5px;
   }
   .footer {
     font-family: "Montserrat", sans-serif;

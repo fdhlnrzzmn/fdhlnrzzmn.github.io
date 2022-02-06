@@ -1,5 +1,6 @@
 body {
   color: white;
+  background-color: black;
 }
 
 .navbar-dark {
@@ -21,25 +22,53 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  h1 {
+  .desc {
     margin-left: -100px;
-    font-family: "Bebas Neue", cursive;
-    font-size: 100px;
-    line-height: 0.9;
-    margin-top: -50px;
-    -webkit-animation: anim 1s forwards;
-    animation: anim 1s forwards;
-  }
 
-  p {
-    margin-left: -100px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    -webkit-animation: anim1 1s backwards;
-    animation: anim1 1s backwards;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    padding-right: 190px;
+    h1 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 100px;
+      line-height: 0.9;
+      margin-top: -50px;
+      -webkit-animation: anim 1s forwards;
+      animation: anim 1s forwards;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      -webkit-animation: anim1 1s backwards;
+      animation: anim1 1s backwards;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      padding-right: 170px;
+    }
+
+    .btn {
+      -webkit-transition: 0.6s all;
+      transition: 0.6s all;
+      border-radius: 14px;
+      padding: 4px 4px 4px 4px;
+      -webkit-animation: icon 1s backwards;
+      animation: icon 1s backwards;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      margin-right: 5px;
+      margin-left: -10px;
+
+      img {
+        width: 37px;
+        height: 37px;
+      }
+    }
+
+    .btn:hover {
+      -webkit-transition: 0.6s all;
+      transition: 0.6s all;
+      border-radius: 18px;
+      -webkit-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
+      box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
+    }
   }
 
   .image {
@@ -47,30 +76,6 @@ body {
     margin-right: -120px;
     -webkit-animation: anim 1s forwards;
     animation: anim 1s forwards;
-  }
-
-  .btn {
-    -webkit-transition: 0.6s all;
-    transition: 0.6s all;
-    border-radius: 14px;
-    padding: 4px 4px 4px 4px;
-    -webkit-animation: icon 1s backwards;
-    animation: icon 1s backwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    margin-right: -7px;
-    img {
-      width: 37px;
-      height: 37px;
-    }
-  }
-
-  .btn:hover {
-    -webkit-transition: 0.6s all;
-    transition: 0.6s all;
-    border-radius: 18px;
-    -webkit-box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
-    box-shadow: 11px 14px 22px -8px rgba(255, 255, 255, 0.32);
   }
 }
 
@@ -195,34 +200,39 @@ body {
     padding-bottom: 230px;
     background-image: url(../images/mobile-background.jpg);
 
-    h1 {
-      margin-left: 0;
-      text-align: center;
-      margin-top: 50%;
-      font-size: 70px;
-      -webkit-animation: anim 1s forwards;
-      animation: anim 1s forwards;
-    }
-
-    p {
+    .desc {
       margin-left: 0;
 
-      margin-top: 40px;
-      padding: 0 20px 0 20px;
-      -webkit-animation: anim1 1s backwards;
-      animation: anim1 1s backwards;
-      -webkit-animation-delay: 1s;
-      animation-delay: 1s;
-    }
+      h1 {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 50%;
+        font-size: 70px;
+        -webkit-animation: anim 1s forwards;
+        animation: anim 1s forwards;
+      }
 
-    .btn {
-      margin-left: 0;
+      p {
+        margin-left: 0;
 
-      margin-top: 25px;
-      -webkit-animation: icon 1s backwards;
-      animation: icon 1s backwards;
-      -webkit-animation-delay: 2s;
-      animation-delay: 2s;
+        margin-top: 40px;
+        padding: 0 20px 0 20px;
+        -webkit-animation: anim1 1s backwards;
+        animation: anim1 1s backwards;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+
+      .btn {
+        margin-left: 0;
+
+        margin-top: 25px;
+        -webkit-animation: icon 1s backwards;
+        animation: icon 1s backwards;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        margin-right: -5px;
+      }
     }
   }
 
