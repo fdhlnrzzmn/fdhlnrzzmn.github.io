@@ -19,7 +19,7 @@
 
     <nav class="navbar py-4 navbar-dark">
         <div class="container">
-            <a class="navbar-brand m-auto" href="https://fdhlnrzzmn.com" data-tilt>
+            <a class="navbar-brand m-auto" href="https://fdhlnrzzmn.com">
                 <img src="images/logo.png" alt="FDL logo" width="42" height="32">
             </a>
         </div>
@@ -29,15 +29,15 @@
         <div class="container">
             <div class="row">
                 <div class="desc col align-self-center text-center text-md-start">
-                    <h1 class="mb-3">Intellectual Conscience</h1>
-                    <p class="mb-4">Tak peduli apa yang telah kau capai, jangan lupa untuk mensyukuri, lalu <span
+                    <h1 class="mb-3" data-tilt>Intellectual Conscience</h1>
+                    <p class="mb-4" data-tilt>Tak peduli apa yang telah kau capai, jangan lupa untuk mensyukuri, lalu <span
                             style="font-weight: bold;" ;>tetaplah bersemi, setiap hari</span>. Masih banyak ilmu yang perlu digali, masih luas samudera yang perlu
                         diarungi, jangan pernah berpuas diri.</p>
                     <a class="btn" target="_blank" href="https://t.me/fdhlnrzzmn" role="button">
                         <img src="images/telegram-icon.png" />
                     </a>
                     <a class="btn" target="_blank" href="https://instagram.com/fdhlnrzzmn" role="button">
-                        <img src="images/instagram-icon.png" />
+                        <img src="images/instagram-icon.png"/>
                     </a>
                     <a class="btn" target="_blank" href="https://twitter.com/fdhlnrzzmn" role="button">
                         <img src="images/twitter-icon.png" />
@@ -75,8 +75,15 @@
     <script type="text/javascript" src="js/tilt.jquery.js"></script>
     <script>
     $('.image').tilt({
-        scale: 1.1
+    glare: true,
+    maxGlare: .1
     })
     </script>
+    <script>
+        $('.btn').tilt({
+        glare: true,
+        maxGlare: .1
+        })
+        </script>
 </body>
 </html>
