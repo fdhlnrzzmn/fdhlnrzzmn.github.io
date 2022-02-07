@@ -24,10 +24,6 @@ body {
   background-size: cover;
 }
 
-.hero-image .desc {
-  margin-left: -100px;
-}
-
 .hero-image .desc h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 100px;
@@ -44,7 +40,7 @@ body {
   animation: anim1 1s backwards;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  padding-right: 170px;
+  padding-right: 80px;
 }
 
 .hero-image .desc .btn {
@@ -74,8 +70,8 @@ body {
 }
 
 .hero-image .image {
-  margin-left: 240px !important;
-  margin-right: -120px;
+  margin-left: 180px !important;
+  margin-right: -50px;
   -webkit-animation: anim 1s forwards;
   animation: anim 1s forwards;
 }

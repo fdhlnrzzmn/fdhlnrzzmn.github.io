@@ -23,8 +23,6 @@ body {
   background-size: cover;
 
   .desc {
-    margin-left: -100px;
-
     h1 {
       font-family: "Bebas Neue", cursive;
       font-size: 100px;
@@ -41,7 +39,7 @@ body {
       animation: anim1 1s backwards;
       -webkit-animation-delay: 1s;
       animation-delay: 1s;
-      padding-right: 170px;
+      padding-right: 80px;
     }
 
     .btn {
@@ -72,8 +70,8 @@ body {
   }
 
   .image {
-    margin-left: 240px !important;
-    margin-right: -120px;
+    margin-left: 180px !important;
+    margin-right: -50px;
     -webkit-animation: anim 1s forwards;
     animation: anim 1s forwards;
   }
