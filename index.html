@@ -19,7 +19,7 @@
 
     <nav class="navbar py-4 navbar-dark">
         <div class="container">
-            <a class="navbar-brand m-auto" href="https://fdhlnrzzmn.com">
+            <a class="navbar-brand m-auto" href="https://fdhlnrzzmn.com" data-tilt>
                 <img src="images/logo.png" alt="FDL logo" width="42" height="32">
             </a>
         </div>
@@ -70,8 +70,13 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/tilt.jquery.js"></script>
+    <script>
+    $('.image').tilt({
+        scale: 1.1
+    })
+    </script>
 </body>
 </html>

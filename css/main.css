@@ -1,5 +1,5 @@
 body {
-  color: white;
+  color: #eeede9;
   background-color: black;
 }
 
@@ -80,7 +80,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   background-color: black;
-  color: white;
+  color: #eeede9;
   margin-top: -10px;
 }
 
@@ -174,7 +174,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body {
-    color: white;
+    color: #eeede9;
   }
   .navbar-dark {
     background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#292929));
@@ -223,7 +223,7 @@ body {
   .footer {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-    color: white;
+    color: #eeede9;
   }
 }
 
