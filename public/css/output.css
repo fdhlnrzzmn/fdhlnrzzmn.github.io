@@ -535,16 +535,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-full {
@@ -559,10 +559,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .self-end {
   align-self: flex-end;
 }
@@ -573,10 +569,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .scroll-smooth {
   scroll-behavior: smooth;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .rounded-br-3xl {
@@ -590,16 +582,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-fdl2 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2f2f2f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(47 47 47 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br {
@@ -624,21 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .pt-64 {
   padding-top: 16rem;
 }
@@ -649,6 +616,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
+}
+
+.pb-64 {
+  padding-bottom: 16rem;
+}
+
+.pb-72 {
+  padding-bottom: 18rem;
+}
+
+.pt-72 {
+  padding-top: 18rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
 }
 
 .text-center {
@@ -673,11 +660,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -695,11 +677,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(238 237 233 / var(--tw-text-opacity));
 }
 
-.grayscale {
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -708,9 +685,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 62px;
 }
 
-.hover\:bg-fdl2:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-md:hover {
@@ -720,46 +698,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:bg-center {
     background-position: center;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:mr-20 {
-    margin-right: 5rem;
+  .lg\:-mt-10 {
+    margin-top: -2.5rem;
   }
 
   .lg\:ml-20 {
     margin-left: 5rem;
   }
 
-  .lg\:mr-32 {
-    margin-right: 8rem;
-  }
-
   .lg\:mr-40 {
     margin-right: 10rem;
-  }
-
-  .lg\:mr-52 {
-    margin-right: 13rem;
-  }
-
-  .lg\:mr-48 {
-    margin-right: 12rem;
-  }
-
-  .lg\:mr-56 {
-    margin-right: 14rem;
-  }
-
-  .lg\:mr-44 {
-    margin-right: 11rem;
-  }
-
-  .lg\:-mt-10 {
-    margin-top: -2.5rem;
   }
 
   .lg\:w-\[130px\] {
@@ -770,36 +728,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .lg\:justify-start {
     justify-content: flex-start;
   }
 
-  .lg\:pr-20 {
-    padding-right: 5rem;
-  }
-
-  .lg\:pt-64 {
-    padding-top: 16rem;
-  }
-
-  .lg\:pt-56 {
-    padding-top: 14rem;
-  }
-
-  .lg\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
   .lg\:pt-52 {
     padding-top: 13rem;
-  }
-
-  .lg\:pb-44 {
-    padding-bottom: 11rem;
   }
 
   .lg\:pb-48 {
