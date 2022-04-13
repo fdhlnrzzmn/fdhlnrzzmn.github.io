@@ -17,11 +17,11 @@ body {
 
 .hero-image {
   margin-top: -100px;
-  margin-bottom: 10px;
   padding: 15% 0 12% 0;
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .hero-image .desc h1 {
@@ -71,7 +71,25 @@ body {
 
 .hero-image .image {
   margin-left: 180px !important;
-  margin-right: -50px;
+  margin-right: -35px;
+  -webkit-animation: anim 1s forwards;
+  animation: anim 1s forwards;
+}
+
+.content {
+  margin-top: -80px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#181818), color-stop(#181818), color-stop(#181818), color-stop(#181818), color-stop(#181818), color-stop(#181818), to(transparent));
+  background: linear-gradient(to top, #181818, #181818, #181818, #181818, #181818, #181818, transparent);
+  height: 50vh;
+}
+
+.content h2 {
+  margin-top: 10px;
+  padding-top: 150px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  line-height: 0.9;
+  margin-top: 10px;
   -webkit-animation: anim 1s forwards;
   animation: anim 1s forwards;
 }
@@ -190,6 +208,7 @@ body {
     margin-top: -100px;
     padding-bottom: 230px;
     background-image: url(../images/mobile-background.jpg);
+    height: 100vh;
   }
   .hero-image .desc {
     margin-left: 0;
