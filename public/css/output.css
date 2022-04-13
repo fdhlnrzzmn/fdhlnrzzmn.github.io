@@ -540,6 +540,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.-mt-16 {
+  margin-top: -4rem;
+}
+
+.-mt-4 {
+  margin-top: -1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -593,6 +605,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 40px;
 }
 
+.rounded-t-\[30px\] {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
 .rounded-br-3xl {
   border-bottom-right-radius: 1.5rem;
 }
@@ -611,6 +628,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(238 237 233 / var(--tw-bg-opacity));
 }
 
+.bg-fdl2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -626,6 +648,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-7 {
   padding: 1.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -666,6 +692,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-32 {
   padding-bottom: 8rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
 }
 
 .text-center {
