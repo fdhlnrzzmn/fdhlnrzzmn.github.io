@@ -11,7 +11,6 @@ module.exports = {
         bebas:['Bebas Neue, cursive'],
         montserrat:['Montserrat']
       },
-      leading:'62px'
     },
   },
   plugins: [],
