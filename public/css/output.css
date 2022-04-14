@@ -540,8 +540,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.-mb-10 {
+  margin-bottom: -2.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .-mt-4 {
@@ -556,16 +560,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -2.5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.-mb-7 {
+  margin-bottom: -1.75rem;
 }
 
-.-mb-10 {
-  margin-bottom: -2.5rem;
+.-mb-8 {
+  margin-bottom: -2rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
 }
 
 .flex {
@@ -582,10 +590,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-full {
@@ -648,24 +652,43 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(238 237 233 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2f2f2f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 47 47 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#171717\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1b1b1b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1a1a1a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#7a7a7a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 122 122 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-tr {
-  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-bl {
-  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
 
 .from-neutral-900 {
@@ -673,77 +696,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(23 23 23 / 0));
 }
 
-.from-indigo-500 {
-  --tw-gradient-from: #6366f1;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
-}
-
-.from-gray-800 {
-  --tw-gradient-from: #1f2937;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(31 41 55 / 0));
-}
-
-.from-fdl {
-  --tw-gradient-from: #eeede9;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(238 237 233 / 0));
-}
-
-.from-fdl2 {
-  --tw-gradient-from: #484848;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(72 72 72 / 0));
-}
-
-.from-stone-800 {
-  --tw-gradient-from: #292524;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(41 37 36 / 0));
-}
-
-.via-purple-500 {
-  --tw-gradient-stops: var(--tw-gradient-from), #a855f7, var(--tw-gradient-to, rgb(168 85 247 / 0));
-}
-
-.via-gray-500 {
-  --tw-gradient-stops: var(--tw-gradient-from), #6b7280, var(--tw-gradient-to, rgb(107 114 128 / 0));
-}
-
-.via-gray-900 {
-  --tw-gradient-stops: var(--tw-gradient-from), #111827, var(--tw-gradient-to, rgb(17 24 39 / 0));
-}
-
-.via-\[\#44403c\] {
-  --tw-gradient-stops: var(--tw-gradient-from), #44403c, var(--tw-gradient-to, rgb(68 64 60 / 0));
-}
-
-.via-stone-700 {
-  --tw-gradient-stops: var(--tw-gradient-from), #44403c, var(--tw-gradient-to, rgb(68 64 60 / 0));
-}
-
-.via-fdl2 {
-  --tw-gradient-stops: var(--tw-gradient-from), #484848, var(--tw-gradient-to, rgb(72 72 72 / 0));
-}
-
 .to-neutral-600 {
   --tw-gradient-to: #525252;
-}
-
-.to-pink-500 {
-  --tw-gradient-to: #ec4899;
-}
-
-.to-gray-900 {
-  --tw-gradient-to: #111827;
-}
-
-.to-fdl2 {
-  --tw-gradient-to: #484848;
-}
-
-.to-gray-700 {
-  --tw-gradient-to: #374151;
-}
-
-.to-stone-800 {
-  --tw-gradient-to: #292524;
 }
 
 .p-7 {
@@ -768,12 +722,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 16rem;
 }
 
-.pb-64 {
-  padding-bottom: 16rem;
+.pb-52 {
+  padding-bottom: 13rem;
 }
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .pt-36 {
@@ -784,40 +750,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 9rem;
 }
 
-.pt-7 {
-  padding-top: 1.75rem;
+.pb-64 {
+  padding-bottom: 16rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
-}
-
-.pb-28 {
-  padding-bottom: 7rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
+.pb-72 {
+  padding-bottom: 18rem;
 }
 
 .text-center {
@@ -888,14 +826,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(72 72 72 / var(--tw-text-opacity));
 }
 
-.text-gray-200 {
+.text-stone-400 {
   --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
+  color: rgb(168 162 158 / var(--tw-text-opacity));
 }
 
-.text-gray-900 {
+.text-stone-50 {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(250 250 249 / var(--tw-text-opacity));
+}
+
+.text-stone-100 {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 244 / var(--tw-text-opacity));
+}
+
+.text-stone-200 {
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
+}
+
+.text-stone-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity));
 }
 
 .grayscale {
@@ -1007,6 +960,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pb-56 {
+    padding-bottom: 14rem;
+  }
+
+  .lg\:pb-52 {
+    padding-bottom: 13rem;
+  }
+
+  .lg\:pb-60 {
+    padding-bottom: 15rem;
   }
 
   .lg\:text-left {
