@@ -649,6 +649,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(122 122 122 / var(--tw-bg-opacity));
 }
 
+.bg-fdl2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
