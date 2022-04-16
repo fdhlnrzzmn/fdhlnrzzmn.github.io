@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors:{
         fdl : '#eeede9',
-        fdl2 : '#484848'
+        fdl2 : '#484848',
+        fdl3 : '#313131',
       },
       fontFamily :{
         bebas:['Bebas Neue, cursive'],

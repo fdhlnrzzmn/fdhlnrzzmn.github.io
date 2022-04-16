@@ -506,11 +506,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -521,14 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-0 {
   right: 0px;
-}
-
-.z-\[9999\] {
-  z-index: 9999;
-}
-
-.-z-\[9999\] {
-  z-index: -9999;
 }
 
 .z-50 {
@@ -613,10 +600,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-content: center;
 }
 
-.items-center {
-  align-items: center;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -651,9 +634,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-fdl2 {
+.bg-fdl3 {
   --tw-bg-opacity: 1;
-  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+  background-color: rgb(49 49 49 / var(--tw-bg-opacity));
 }
 
 .bg-fdl {
